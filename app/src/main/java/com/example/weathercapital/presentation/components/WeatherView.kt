@@ -1,6 +1,5 @@
 package com.example.weathercapital.presentation.components
 
-import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -24,7 +23,6 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 fun WeatherView(
     weather: Weather,
 ) {
-    Log.d("wow", weather.toString())
     LazyColumn(
         modifier = Modifier
             .fillMaxWidth()

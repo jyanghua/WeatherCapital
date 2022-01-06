@@ -1,6 +1,5 @@
 package com.example.weathercapital.presentation.ui.weather
 
-import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -24,10 +23,7 @@ constructor(
     suspend fun onTriggerEvent(city: String) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                Log.d("wow", city)
                 weather.value = weatherRepository.getWeatherByCity(city)
-                Log.d("wow1", weather.value.toString())
-
             } catch (e: Exception) {
                 e.printStackTrace()
             }
