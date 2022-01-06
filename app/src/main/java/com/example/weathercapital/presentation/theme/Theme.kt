@@ -1,4 +1,4 @@
-package com.example.weathercapital.ui.theme
+package com.example.weathercapital.presentation.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

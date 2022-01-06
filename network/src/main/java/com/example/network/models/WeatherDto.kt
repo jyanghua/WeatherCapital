@@ -15,13 +15,13 @@ data class WeatherDto(
 @JsonClass(generateAdapter = true)
 data class LocationDto(
     @Json(name = "name")
-    val name: String? = null,
+    val name: String? = "",
 
     @Json(name = "country")
-    val country: String? = null,
+    val country: String? = "",
 
     @Json(name = "tz_id")
-    val timezoneId: String? = null
+    val timezoneId: String? = ""
 )
 
 @JsonClass(generateAdapter = true)
@@ -33,7 +33,7 @@ data class ForecastDto(
 @JsonClass(generateAdapter = true)
 data class ForecastDayDto(
     @Json(name = "date")
-    val date: String? = null,
+    val date: String? = "",
 
     @Json(name = "day")
     val dayDto: DayDto? = null,
@@ -60,8 +60,8 @@ data class DayDto(
 @JsonClass(generateAdapter = true)
 data class ConditionDto(
     @Json(name = "text")
-    val text: String? = null,
+    val text: String? = "",
 
     @Json(name = "icon")
-    val icon: String? = null
+    val icon: String? = ""
 )

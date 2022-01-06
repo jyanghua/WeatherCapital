@@ -32,6 +32,6 @@ internal fun WeatherDto.toDomain(): Weather {
 internal fun ConditionDto.toDomain(): Condition {
     return Condition(
         this.text,
-        this.icon?.substring(2)
+        "https://${this.icon?.substring(2)}"
     )
 }

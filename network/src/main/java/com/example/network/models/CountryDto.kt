@@ -18,11 +18,11 @@ data class CountryDto(
 @JsonClass(generateAdapter = true)
 data class CountryNameDto(
     @Json(name = "common")
-    val common: String? = null
+    val common: String? = ""
 )
 
 @JsonClass(generateAdapter = true)
 data class CountryFlagsDto(
     @Json(name = "png")
-    val png: String? = null
+    val png: String? = ""
 )

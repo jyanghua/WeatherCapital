@@ -75,6 +75,7 @@ dependencies {
     implementation(Dependencies.Compose.compiler)
     implementation(Dependencies.Compose.tooling)
     implementation(Dependencies.Compose.foundation)
+    implementation(Dependencies.Compose.hiltNavigation)
     implementation(Dependencies.Compose.material)
     implementation(Dependencies.Compose.materialIconsCore)
     implementation(Dependencies.Compose.materialIconsExt)
@@ -83,9 +84,11 @@ dependencies {
     androidTestImplementation(Dependencies.Compose.tests)
     debugImplementation(Dependencies.Compose.tooling)
 
-    // Glide
-    implementation(Dependencies.Glide.core)
-    kapt(Dependencies.Glide.processor)
+    // Coil
+    implementation(Dependencies.Compose.coil)
+
+    // Accompanist
+    implementation(Dependencies.Compose.accompanist)
 
     // Lifecycle
     implementation(Dependencies.Android.viewmodel)

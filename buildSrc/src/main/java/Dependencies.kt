@@ -47,17 +47,15 @@ object Dependencies {
             "androidx.compose.material:material-icons-extended:${Versions.compose}"
         const val composeLivedata = "androidx.compose.runtime:runtime-livedata:${Versions.compose}"
         const val tests = "androidx.compose.ui:ui-test-junit4:${Versions.compose}"
+        const val hiltNavigation = "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigation}"
+        const val coil = "io.coil-kt:coil-compose:${Versions.coil}"
+        const val accompanist = "com.google.accompanist:accompanist-navigation-animation:${Versions.accompanist}"
     }
 
     object Test {
         const val junit = "junit:junit:${Versions.Test.junit}"
         const val ext = "androidx.test.ext:junit:${Versions.Test.ext}"
         const val espresso = "androidx.test.espresso:espresso-core:${Versions.Test.espresso}"
-    }
-
-    object Glide {
-        const val core = "com.github.bumptech.glide:glide:${Versions.glide}"
-        const val processor = "com.github.bumptech.glide:compiler:${Versions.glide}"
     }
 
     object Hilt {

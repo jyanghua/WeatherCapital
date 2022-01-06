@@ -1,10 +1,10 @@
 package com.example.domain.models
 
 data class Weather(
-    val city: String? = null,
-    val country: String? = null,
-    val timezoneId: String? = null,
-    val date: String? = null,
+    val city: String? = "",
+    val country: String? = "",
+    val timezoneId: String? = "",
+    val date: String? = "",
     val maxTempC: Double? = null,
     val maxTempF: Double? = null,
     val minTempC: Double? = null,
@@ -13,6 +13,6 @@ data class Weather(
 )
 
 data class Condition(
-    val text: String? = null,
-    val icon: String? = null
+    val text: String? = "",
+    val icon: String? = ""
 )
